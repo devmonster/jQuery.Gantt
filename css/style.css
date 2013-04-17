@@ -1,13 +1,7 @@
 .gantt, .gantt2 {
     width: 100%;
-    margin: 20px auto;
-    border: 14px solid #ddd;
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
-        border-radius: 6px;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    /*padding-left: 30px;*/
+    
 }
 
 .gantt:after {
@@ -25,6 +19,7 @@
 .fn-gantt .fn-content {
     overflow: hidden;
     position: relative;
+    background-color: White;
     width: 100%;
 }
 
@@ -35,7 +30,7 @@
 
 .fn-gantt .leftPanel {
     float: left;
-    width: 225px;
+    width: 365px;
     overflow: hidden;
     border-right: 1px solid #DDD;
     position: relative;
@@ -59,6 +54,11 @@
     overflow: hidden;
 }
 
+.fn-gantt .leftPanel .fn-main-label
+{
+    width: 250px;
+    }
+
 .fn-gantt .leftPanel .row0 {
     border-top: 1px solid #DDD;
 }
@@ -68,11 +68,12 @@
     margin: 0;
     border-bottom: 1px solid #DDD;
     background-color: #f6f6f6;
+    font-size: 11px;
 }
 
 .fn-gantt .leftPanel .name {
-    width: 110px;
-    font-weight: bold;
+    width: 250px;
+    font-weight: normal;
 }
 
 .fn-gantt .leftPanel .desc {
@@ -80,7 +81,7 @@
 }
 
 .fn-gantt .leftPanel .fn-wide, .fn-gantt .leftPanel .fn-wide .fn-label {
-    width: 225px;
+    width: 365px;
 }
 
 .fn-gantt .spacer {
@@ -101,7 +102,7 @@
 .fn-gantt .dataPanel {
     margin-left: 0px;
     border-right: 1px solid #DDD;
-    background-image: url(../img/grid.png);
+    background-image: url(Images/grid.png);
     background-repeat: repeat;
     background-position: 24px 24px;
 }
@@ -206,10 +207,17 @@
 }
 
 .fn-gantt .ganttRed {
-    background-color: #F9C4E1;
+    background-color: #C31A0B;
 }
 .fn-gantt .ganttRed .fn-label {
     color: #78436D !important;
+}
+
+.fn-gantt .ganttGray {
+    background-color: #cecece;
+}
+.fn-gantt .ganttGray .fn-label {
+    color: White !important;
 }
 
 .fn-gantt .ganttGreen {
@@ -287,7 +295,7 @@
 .fn-gantt .navigate .nav-slider-button {
     width: 17px;
     height: 60px;
-    background: url(../img/slider_handle.png) center center no-repeat;
+    background: url(Images/slider_handle.png) center center no-repeat;
     left: 0px;
     top: 0px;
     margin: -26px 0 0 0;
@@ -318,7 +326,7 @@
     width: 20px;
     height: 20px;
     font-size: 0px;
-    background: #595959 url(../img/icon_sprite.png) !important;
+    background: #595959 url(Images/icon_sprite.png) !important;
     border: 1px solid #454546;
     cursor: pointer;
     vertical-align: top;
@@ -394,7 +402,7 @@
 }
 
 .fn-gantt-loader {
-    background-image: url(../img/loader_bg.png);
+    background-image: url(Images/loader_bg.png);
     z-index: 30;
 }
 
@@ -415,4 +423,3 @@
 .row:after {
     clear: both;
 }
-
